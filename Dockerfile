@@ -6,8 +6,8 @@ RUN apt-get install -y php
 
 # Pull code from CodeCommitt
 copy index.php /var/www/html
-copy css/. /var/www/html
-copy images/. /var/www/html
+copy css/. /var/www/html/css/
+copy images/. /var/www/html/images/
 
 
 # Configure apache
