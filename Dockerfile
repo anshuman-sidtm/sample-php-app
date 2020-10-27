@@ -5,7 +5,9 @@ RUN apt-get install -y apache2
 RUN apt-get install -y php
 
 # Pull code from CodeCommitt
-RUN cp /. /var/www/html
+copy index.php /var/www/html
+copy css/. /var/www/html
+copy images/. /var/www/html
 
 
 # Configure apache
