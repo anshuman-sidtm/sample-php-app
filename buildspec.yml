@@ -3,8 +3,8 @@ version: 0.2
 phases:
   install:
     commands:
-        - yum install python3-pip
-        - pip3 install Flask
+        - yum install python3-pip -y
+        - pip3 install Flask -y
   build:
     commands:
       - echo Build started on `date`
